@@ -39,8 +39,10 @@
 }
 
 @font-face {
-  font-family: Bandein Sans Strange Variable;
-  src: url(../assets/fonts/BandeinsStrangeVariableGX.ttf) format("truetype-variations")
+  font-family: Gilroy Regular;
+  src: url(../assets/fonts/GilroyRegular.ttf) format("truetype-variations"),
+  url(../assets/fonts/GilroyRegular.woff2) format("woff2"), 
+  url(../assets/fonts/GilroyRegular.woff) format("woff");
 }
 
 a,
@@ -608,7 +610,7 @@ textarea:focus {
 
 @supports (font-variation-settings:"wdth"1) {
   .date-day>span:first-letter {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-variation-settings: "wdth" 400
   }
 }
@@ -648,7 +650,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .heading>i,
   .heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -713,7 +715,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .h2>i,
   .h2>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -793,7 +795,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .h3>i,
   .h3>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -1063,7 +1065,7 @@ textarea:focus {
 @supports (font-variation-settings:"wght"400) {
   .audio-player__playlist .track-name {
     font-weight: 400;
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-variation-settings: "wght" 400
   }
 }
@@ -1315,7 +1317,7 @@ textarea:focus {
 
 @supports (font-variation-settings:"wght"500) {
   .button__text>i {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-variation-settings: "wdth" 400, "wght" 520
   }
 }
@@ -1555,7 +1557,7 @@ textarea:focus {
 @supports (font-variation-settings:"wght"600) {
   .gdpr-alert__button i {
     font-weight: 400;
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-variation-settings: "wdth" 400, "wght" 600
   }
 }
@@ -2325,7 +2327,7 @@ textarea:focus {
 
 @supports (font-variation-settings:"wght"1) {
   .navigation__link>i {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-variation-settings: "wdth" 500, "wght" 300
   }
 }
@@ -2634,7 +2636,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .hero__heading>i,
   .hero__heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -2805,7 +2807,7 @@ textarea:focus {
   @supports (font-variation-settings:"wdth"1) {
     .scroll-indicator i {
       margin-left: .3em;
-      font-family: Bandein Sans Strange Variable, sans-serif;
+      font-family: Gilroy Regular, sans-serif;
       font-weight: 400;
       font-variation-settings: "wdth" 500, "wght" 800
     }
@@ -3094,13 +3096,13 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .media-item__heading>i,
   .media-item__heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
   .team-item__heading>i,
   .team-item__heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -4461,7 +4463,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .home-video__heading>i,
   .home-video__heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -4858,7 +4860,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .tour-dates-item__address>i,
   .tour-dates-item__address>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -5059,7 +5061,7 @@ textarea:focus {
   }
   @supports (font-variation-settings:"wdth"1) {
     .tour-dates-item__day>span:first-letter {
-      font-family: Bandein Sans Strange Variable, sans-serif;
+      font-family: Gilroy Regular, sans-serif;
       font-variation-settings: "wdth" 400
     }
   }
@@ -5095,7 +5097,7 @@ textarea:focus {
   }
   @supports (font-variation-settings:"wdth"1) {
     .tour-dates-item--default .tour-dates-item__day>span:first-letter {
-      font-family: Bandein Sans Strange Variable, sans-serif;
+      font-family: Gilroy Regular, sans-serif;
       font-variation-settings: "wdth" 400
     }
   }
@@ -5314,7 +5316,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .tour-dates-archive-link__text>i,
   .tour-dates-archive-link__text>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -5439,7 +5441,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .tour-dates-message__heading>i,
   .tour-dates-message__heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -6094,7 +6096,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .works-modal__heading>i,
   .works-modal__heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -6199,7 +6201,7 @@ textarea:focus {
 
 @supports (font-variation-settings:"wght"250) {
   .works-playlist {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-variation-settings: "wght" 250
   }
 }
@@ -6517,7 +6519,7 @@ textarea:focus {
 
 @supports (font-variation-settings:"wdth"1) {
   .sheet-music-intro__content p:last-child:first-letter {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -6576,7 +6578,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .sheet-music-intro__heading>i,
   .sheet-music-intro__heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -6765,7 +6767,7 @@ textarea:focus {
 
 @supports (font-variation-settings:"wdth"1) {
   .event-summary__day>span:first-letter {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-variation-settings: "wdth" 400
   }
 }
@@ -6888,7 +6890,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .event-summary__heading>i,
   .event-summary__heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
@@ -7937,7 +7939,7 @@ textarea:focus {
 @supports (font-variation-settings:"wdth"1) {
   .privacy__heading>i,
   .privacy__heading>u {
-    font-family: Bandein Sans Strange Variable, sans-serif;
+    font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
