@@ -8698,7 +8698,6 @@ body.admin {
 
 /* ANIMACION */
 
-
 @keyframes hideshow {
   0% { opacity: 1; }
   5% { opacity: 1; }
