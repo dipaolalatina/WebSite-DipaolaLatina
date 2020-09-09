@@ -4712,11 +4712,11 @@ textarea:focus {
     flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: flex-start;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     padding-top: 148px;
-    padding-top: calc(var(--header-height) + 40px);
+    padding-top: calc(var(--header-height) + 120px);
     z-index: 1;
     height: 100%
   }
@@ -4805,7 +4805,7 @@ textarea:focus {
 
 @media (min-width:1080px) {
   .tour-dates-item--default .tour-dates-item__details {
-    padding: 20px 0
+    padding: 80px 0
   }
   .tour-dates-item--small .tour-dates-item__details {
     -webkit-box-flex: 1;
@@ -4889,7 +4889,8 @@ textarea:focus {
   .tour-dates-item__address {
     font-size: 28px;
     font-size: calc(2.10526vw - -21.26316px);
-    font-size: calc(var(--font-size-multiplier)*0.02105*100vw - -21.26316px)
+    font-size: calc(var(--font-size-multiplier)*0.02105*100vw - -21.26316px);
+    font-weight: 600;
   }
 }
 
@@ -4909,18 +4910,20 @@ textarea:focus {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    margin-bottom: .45454545em
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: .45454545em;
+    font-weight: 600;
   }
   .tour-dates-item--default .tour-dates-item__address>span {
     display: block;
-    width: 100%
+    width: 100%;
+    min-height: 2em;
   }
   .tour-dates-item--small .tour-dates-item__address {
     font-size: 22px;
-    font-weight: 500
+    font-weight: 600
   }
 }
 
@@ -4932,23 +4935,23 @@ textarea:focus {
 
 @media (min-width:1080px) and (min-height:700px) {
   .tour-dates-item--default .tour-dates-item__address {
-    min-height: 3.5em;
-    margin-top: -1.75em
+    min-height: 1.5em;
+    margin-top: -0.75em
   }
 }
 
 .tour-dates-item__venue {
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 1.1;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.3em;
   letter-spacing: .1em;
   display: block
 }
 
 @media (min-width:320px) {
   .tour-dates-item__venue {
-    font-size: 12px;
+    font-size: 14px;
     font-size: calc(.26316vw - -11.15789px);
     font-size: calc(var(--font-size-multiplier)*0.00263*100vw - -11.15789px)
   }
@@ -4957,8 +4960,8 @@ textarea:focus {
 @media (min-width:1080px) {
   .tour-dates-item__venue {
     font-size: 14px;
-    font-size: calc(var(--font-size-multiplier)*14px);
-    height: 2.5em
+    font-size: calc(var(--font-size-multiplier)*16px);
+    /* height: 2.5em */
   }
 }
 
