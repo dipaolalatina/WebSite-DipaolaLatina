@@ -26,13 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta name="msapplication-TileColor" content="#444">
 	<meta name="theme-color" content="#fff">
 	<link rel="stylesheet" href="../dist/mainfd34.css?v=707966">
-	<script>
-      function myFunction() {
-      	document.getElementById("logo-header-negro-1").classList.toggle("esconder");
-			document.getElementById("logo-header-negro-2").classList.toggle("esconder");
-			document.getElementById("logo-header-negro-3").classList.toggle("esconder");
-	}
-    </script>
+	
 </head>
 <body class="works" style="opacity: 0;">
 <!-- Google Tag Manager (noscript) -->
@@ -6803,6 +6797,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<nav class="navigation__inner" aria-label="Main" tabindex="-1">
 						<ul class="navigation__list" role="menubar">
 							<li class="navigation__item">
+								<a tabindex="0" role="menuitem" class="navigation__link" href="../servicios/index.html">Servicios</a>
+							</li>
+							<li class="navigation__item">
 								<a tabindex="0" role="menuitem" class="navigation__link" href="../works/index.html">Trabajos</a>
 							</li>
 							<li class="navigation__item">
@@ -6820,16 +6817,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</ul>
 					
 						<ul class="navigation__social" role="menubar">
-							<!-- <li class="navigation__social-item">
-								<a  role="menuitem" class="navigation__social-link" href="../mailing-list/index.html" aria-label="Join the mailing list" rel="noopener noreferrer">
-									<svg width="16" height="12">
-										<path fill="#000" d="M8 6.5L0 0h16L8 6.5zm0 1.7L0 1.7V12h16V1.7L8 8.2z"/>
-									</svg>
-								</a>
-								<svg class="navigation__social-border" width="38" height="38">
-									<circle fill="none" cx="19" cy="19" r="18" stroke="currentColor" stroke-width="1.5" /></circle>
-								</svg>
-							</li> -->
 							<li class="navigation__social-item">
 								<a target="_blank" role="menuitem" class="navigation__social-link" href="#" aria-label="Facebook" rel="noopener noreferrer">
 									<svg viewBox="0 0 9 19" width="9" height="19">
@@ -10297,12 +10284,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<div class="media-item">
 											<div class="media-item__inner">
 												<div class="media-item__container">
-													<a class="media-item__hgroup" data-modal="trabajo2" href="#trabajo2" tabindex="0">
+													<a class="media-item__hgroup" onclick="myFunction()" data-modal="trabajo2" href="#trabajo2" tabindex="0">
 														<h3 class="media-item__heading">Trabajo 2</h3>
 														<div class="media-item__text">2017</div>
 													</a>
 												</div>
-												<a data-modal="trabajo2" href="#trabajo2" tabindex="-1">
+												<a data-modal="trabajo2" onclick="myFunction()" href="#trabajo2" tabindex="-1">
 													<picture class="media-item__picture">
 														<img width="600" height="600" loading="lazy" class="media-item__image" src="../assets/images/album-thumbs/efe_2017.jpg" alt="Trabajo 2" />
 													</picture>
@@ -10464,7 +10451,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 												</header>
 											</div>
 											<div class="home-video__background"></div>
-											<button class="home-video__button"><span>Play</span></button>
+											<button class="home-video__button" id="video-1"><span>Play</span></button>
 											<video	poster="../assets/images/home-video-first-frame.jpg" autoplay muted playsinline loop class="home-video__video" src="https://olafur-arnalds.s3-eu-west-1.amazonaws.com/unfold.mp4" preload="auto">
 											</video>
 											<div class="home-video__credits">
@@ -10484,85 +10471,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<div id="player"></div>
 									</div>
 								</div>
+
+								<div class="scroll-wrap__item modal works-modal works-modal--no-playlist" id="trabajo2-modal" role="dialog" aria-labelledby="dialog-title-trabajo2" tabindex="-1">
+									<div class="works-modal__inner-video">
+										<button class="close-button works-modal__close" onclick="myFunction()" aria-label="Close navigation">
+											<svg viewBox="0 0 22 22">
+												<path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M20 2L2 20M20 20L2 2" />
+											</svg>
+										</button>
+
+										<div class="home-video">
+											<div class="home-video__header">
+												<header aria-hidden="true" class="header header--clone">
+													<div class="header__container">
+														<div class="header__inner">
+															
+															<a class="header__logoWrap" href="index.html" title="di Paola Latina">
+																<span class="header__logo">
+																	<object type="image/svg+xml" data="../assets/images/logo-header-blanco.svg">
+																	</object>
+																</span>
+
+															</a>
+														</div>
+													</div>
+												</header>
+											</div>
+											<div class="home-video__background"></div>
+											<button class="home-video__button" id="video-2"><span>Play</span></button>
+											<video	poster="../assets/images/home-video-first-frame.jpg" autoplay muted playsinline loop class="home-video__video" src="https://olafur-arnalds.s3-eu-west-1.amazonaws.com/unfold.mp4" preload="auto">
+											</video>
+											<div class="home-video__credits">
+												<h2 class="home-video__heading">Trabajo 2</h2>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											</div>
+										</div>
+									</div>
+									<div class="modal home-video__modal" id="home-video-modal">
+										<a href="#" onclick="myFunction()"  >
+											<button class="close-button home-video__close works-modal__close" aria-label="Close navigation">
+												<svg viewBox="0 0 22 22">
+													<path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M20 2L2 20M20 20L2 2" />
+												</svg>
+											</button>
+										</a>
+										<div id="player"></div>
+									</div>
+								</div>
+
 								<!-- end scroll-wrap__item -->
 								
 							</div>
 							<!-- end scroll-wrap__inner -->
 						</main>
 <!-- end scroll-wrap -->
-
-
-
-
-
-<!-- <div class="modal home-video__modal" id="trabajo1-modal">
-	<button class="close-button works-modal__close" aria-label="Close navigation">
-			<svg viewBox="0 0 22 22">
-				<path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M20 2L2 20M20 20L2 2" />
-			</svg>
-		</button>
-	<div id="player"></div>
-</div> -->
-
-<!-- <article class="modal works-modal works-modal--no-playlist" id="trabajo1-modal" role="dialog" aria-labelledby="dialog-title-trabajo1" tabindex="-1">
-	<div class="works-modal__inner">
-		<button class="close-button works-modal__close" aria-label="Close navigation">
-			<svg viewBox="0 0 22 22">
-				<path fill="none" stroke="#000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M20 2L2 20M20 20L2 2" />
-			</svg>
-		</button>
-		<div class="works-modal__contentWrap">
-			<h1 class="works-modal__heading" id="dialog-title-trabajo1">Trabajo 1</h1>
-			<h2 class="works-modal__subheading">2018</h2>
-			<div class="works-modal__content works-modal__content--art">
-				<picture class="works-modal__picture">
-					<img width="600" height="600" loading="lazy" class="works-modal__image" src="../assets/images/album-thumbs/remember.jpg" alt="Trabajo 1" />
-				</picture>
-			</div>
-			<h2 class="works-modal__subheading">About</h2>
-			<div class="works-modal__content works-modal__content--description">
-				
-				<p class="works-modal__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<div class="works-modal__buttons">
-					<a class="button button--default works-modal__button" href="https://www.youtube.com/watch?v=yJq7tBvqwiU"  target="_blank">
-						<span class="button__text">Ver <br />Caso</span>
-						<div class="button__border"></div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</article> -->
-
-<article class="modal works-modal works-modal--no-playlist" id="trabajo2-modal" role="dialog" aria-labelledby="dialog-title-trabajo2" tabindex="-1">
-	<div class="works-modal__inner">
-		<button class="close-button works-modal__close" aria-label="Close navigation">
-			<svg viewBox="0 0 22 22">
-				<path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M20 2L2 20M20 20L2 2" />
-			</svg>
-		</button>
-		<div class="works-modal__contentWrap">
-			<h1 class="works-modal__heading" id="dialog-title-trabajo2">Trabajo 2</h1>
-			<h2 class="works-modal__subheading">2017</h2>
-			<div class="works-modal__content works-modal__content--art">
-				<picture class="works-modal__picture">
-					<img width="600" height="600" loading="lazy" class="works-modal__image" src="../assets/images/album-thumbs/efe_2017.jpg" alt="Trabajo 2" />
-				</picture>
-			</div>
-			<h2 class="works-modal__subheading">About</h2>
-			<div class="works-modal__content works-modal__content--description">
-				
-				<p class="works-modal__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<div class="works-modal__buttons">
-					<a class="button button--default works-modal__button" href="https://www.youtube.com/watch?v=yJq7tBvqwiU"  target="_blank">
-						<span class="button__text">Ver <br />Caso</span>
-						<div class="button__border"></div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
 
 <article class="modal works-modal works-modal--no-playlist" id="trabajo3-modal" role="dialog" aria-labelledby="dialog-title-trabajo3" tabindex="-1">
 	<div class="works-modal__inner">
@@ -10854,70 +10816,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 </div>
-	<!-- / main-app -->
-	<script crossorigin="anonymous" src="../polyfill.io/v3/polyfill.min540f.js?features=Array.prototype.forEach%2CNodeList.prototype.forEach"></script>
-		<script src="../js/vendor/focus-visible.min.js"></script>
-		<script src="../js/vendor/jquery-3.4.1.min.js"></script>
-		<script src="../js/vendor/jquery.mousewheel.min.js"></script>
-		<script src="../js/vendor/gsap/gsap.min.js"></script>
-		<script src="../js/vendor/gsap/Draggable.min.js"></script>
-		<script src="../js/vendor/gsap/InertiaPlugin.min.js"></script>
-		<script src="../dist/js/mainfd34.js?v=707966"></script>
-		<script>
-			const tag = document.createElement('script');
-			tag.src = "https://www.youtube.com/iframe_api";
-			const firstScriptTag = document.getElementsByTagName('script')[0];
-			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-			let player;
-			const iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
-			const playButton = document.querySelector('.home-video__button');
-			const closeButton = document.querySelector('.home-video__close');
-			const modal = document.getElementById('home-video-modal');
-			function onYouTubeIframeAPIReady() {
-				player = new YT.Player('player', {
-				height: '1600',
-				width: '900',
-					videoId: 'VC6IoruvRSs',
-					host: 'https://www.youtube-nocookie.com',
-				playerVars: {
-					controls: 0,
-					autoplay: 0,
-					modestbranding: 1,
-					playsinline: 1,
-					showinfo: 0,
-					enablejsapi: 1,
-					iv_load_policy: 3,
-					origin: 'dipaolalatina.com'}
-				});
-			}
-			
-			function playVideo() {
-				player.setPlaybackQuality('hd720');
-				if ( !iOS ) {
-					player.playVideo();
-				}
-			}
-			function closeVideo() {
-				player.stopVideo();
-				modal.classList.remove('active');
-				document.documentElement.classList.remove('modal-open');
-			}
-			playButton.onclick = function(e) {
-				e.preventDefault();
-				modal.classList.add('active');
-				document.documentElement.classList.add('modal-open');
-				playVideo();
-			};
-			closeButton.onclick = closeVideo;
-			document.documentElement.addEventListener('keyup', function(e) {
-				if (e.keyCode === 27) {
-					closeVideo();
-				}
-			})
-			
-		</script>
-	<script src="../js/vendor/jquery.jplayer.js"></script>
-	<script src="../js/ueno.jplayer.playlist.js"></script>
-	<script src="../components/audio-player/audio-player.js"></script>
+<!-- / main-app -->
+<script src="../js/vendor/jquery-3.4.1.min.js"></script>
+<script src="../js/vendor/jquery.mousewheel.min.js"></script>
+<script src="../js/vendor/gsap/gsap.min.js"></script>
+<script src="../js/vendor/gsap/Draggable.min.js"></script>
+<script src="../js/vendor/gsap/InertiaPlugin.min.js"></script>
+<script src="../dist/js/mainfd34.js?v=707966"></script>
+
+<script>
+	
+	const tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+	const firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	let player;
+	const iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+	const playButton = document.querySelector('.home-video__button');
+	const closeButton = document.querySelector('.home-video__close');
+	const modal = document.getElementById('home-video-modal');
+
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('player', {
+			height: '1600',
+			width: '900',
+			videoId: 'VC6IoruvRSs',
+			host: 'https://www.youtube-nocookie.com',
+			playerVars: {
+			controls: 0,
+			autoplay: 0,
+			modestbranding: 1,
+			playsinline: 1,
+			showinfo: 0,
+			enablejsapi: 1,
+			iv_load_policy: 3,
+			origin: 'olafurarnalds.com'}
+		});
+	}
+	
+	function playVideo() {
+		player.setPlaybackQuality('hd720');
+		if ( !iOS ) {
+			player.playVideo();
+		}
+	}
+
+	function closeVideo() {
+		player.stopVideo();
+		modal.classList.remove('active');
+		document.documentElement.classList.remove('modal-open');
+	}
+
+	playButton.onclick = function(e) {
+		e.preventDefault();
+
+		modal.classList.add('active');
+
+		document.documentElement.classList.add('modal-open');
+		playVideo();
+	};
+
+	closeButton.onclick = closeVideo;
+
+	document.documentElement.addEventListener('keyup', function(e) {
+		if (e.keyCode === 27) {
+			closeVideo();
+		}
+	})
+	
+</script>
+
+<script>
+	function myFunction() {
+		document.getElementById("logo-header-negro-1").classList.toggle("esconder");
+		document.getElementById("logo-header-negro-2").classList.toggle("esconder");
+		document.getElementById("logo-header-negro-3").classList.toggle("esconder");
+	}
+  </script>
 		
 </html>

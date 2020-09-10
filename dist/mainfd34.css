@@ -4607,7 +4607,7 @@ textarea:focus {
   }
 }
 
-.tour-dates-item {
+.tour-dates-item, .premios-item{
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
@@ -4615,22 +4615,22 @@ textarea:focus {
   border-bottom: 1px solid var(--color-border)
 }
 
-.tour-dates-item:last-child {
+.tour-dates-item:last-child, .premios-item:last-child {
   border-bottom: 0
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item {
+  .tour-dates-item, .premios-item {
     border-bottom: 0
   }
 }
 
-.tour-dates-item--default {
+.tour-dates-item--default, .premios-item--default {
   position: relative
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--default:after {
+  .tour-dates-item--default:after, .premios-item--default:after {
     content: "";
     position: absolute;
     right: 0;
@@ -4642,13 +4642,13 @@ textarea:focus {
     -webkit-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out
   }
-  .tour-dates-item--default:last-child:after {
+  .tour-dates-item--default:last-child:after, .premios-item--default:last-child:after {
     display: none
   }
 }
 
 @media (min-width:1080px) and (pointer:fine) {
-  .tour-dates-item--default:before {
+  .tour-dates-item--default:before, .premios-item--default:before {
     content: "";
     position: absolute;
     top: 0;
@@ -4665,26 +4665,28 @@ textarea:focus {
     will-change: opacity
   }
   .tour-dates-item--default:focus-within:before,
-  .tour-dates-item--default:hover:before {
+  .tour-dates-item--default:hover:before,
+  .premios-item--default:focus-within:before,
+  .premios-item--default:hover:before {
     opacity: 1
   }
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--default {
+  .tour-dates-item--default, .premios-item--default {
     width: 490px
   }
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--small {
+  .tour-dates-item--small, .premios-item--small {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
   }
 }
 
-.tour-dates-item__container {
+.tour-dates-item__container, .premios-item__container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 70px;
@@ -4705,7 +4707,7 @@ textarea:focus {
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__container {
+  .tour-dates-item--default .tour-dates-item__container, {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4720,7 +4722,25 @@ textarea:focus {
     z-index: 1;
     height: 100%
   }
-  .tour-dates-item--small .tour-dates-item__container {
+
+  .premios-item--default .premios-item__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-top: 148px;
+    padding-top: calc(var(--header-height) + 20px);
+    z-index: 1;
+    height: 100%
+  }
+
+  .tour-dates-item--small .tour-dates-item__container,
+  .premios-item--small .premios-item__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4730,22 +4750,26 @@ textarea:focus {
 }
 
 @media (min-width:1080px) and (min-height:700px) {
-  .tour-dates-item--default .tour-dates-item__container {
+  .tour-dates-item--default .tour-dates-item__container,
+  .premios-item--default .premios-item__container {
     padding-bottom: 70px
   }
 }
 
 @media (min-width:1080px) and (pointer:fine) {
-  .tour-dates-item--default .tour-dates-item__container {
+  .tour-dates-item--default .tour-dates-item__container,
+  .premios-item--default .premios-item__container {
     -webkit-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out
   }
-  .tour-dates-item--default .tour-dates-item__container:hover {
+  .tour-dates-item--default .tour-dates-item__container:hover,
+  .premios-item--default .premios-item__container:hover {
     opacity: .6
   }
 }
 
-.tour-dates-item__buttonWrap {
+.tour-dates-item__buttonWrap,
+.premios-item__buttonWrap {
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
@@ -4765,7 +4789,8 @@ textarea:focus {
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item__buttonWrap {
+  .tour-dates-item__buttonWrap,
+  .premios-item__buttonWrap  {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2
@@ -4773,7 +4798,8 @@ textarea:focus {
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__buttonWrap {
+  .tour-dates-item--default .tour-dates-item__buttonWrap,
+  .premios-item--default .premios-item__buttonWrap {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -4781,7 +4807,8 @@ textarea:focus {
     width: auto;
     max-width: 490px
   }
-  .tour-dates-item--small .tour-dates-item__buttonWrap {
+  .tour-dates-item--small .tour-dates-item__buttonWrap,
+  .premios-item--small .premios-item__buttonWrap {
     -webkit-box-flex: 0;
     -ms-flex: none;
     flex: none;
@@ -4791,7 +4818,8 @@ textarea:focus {
   }
 }
 
-.tour-dates-item__details {
+.tour-dates-item__details,
+.premios-item__details {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
@@ -4804,10 +4832,12 @@ textarea:focus {
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__details {
+  .tour-dates-item--default .tour-dates-item__details,
+  .premios-item--default .premios-item__details {
     padding: 80px 0
   }
-  .tour-dates-item--small .tour-dates-item__details {
+  .tour-dates-item--small .tour-dates-item__details,
+  .premios-item--small .premios-item__details {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -4816,7 +4846,7 @@ textarea:focus {
   }
 }
 
-.tour-dates-item__address {
+.tour-dates-item__address, .premios-item__address {
   font-size: 54px;
   letter-spacing: -.05em;
   font-family: Gordita Web, sans-serif;
@@ -4837,7 +4867,7 @@ textarea:focus {
 }
 
 @media (min-width:320px) {
-  .tour-dates-item__address {
+  .tour-dates-item__address, .premios-item__address {
     font-size: 54px;
     font-size: calc(6.05263vw - -34.63158px);
     font-size: calc(var(--font-size-multiplier)*0.06053*100vw - -34.63158px)
@@ -4845,40 +4875,48 @@ textarea:focus {
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item__address {
+  .tour-dates-item__address, .premios-item__address {
     font-size: 100px;
     font-size: calc(var(--font-size-multiplier)*100px)
   }
 }
 
 .tour-dates-item__address>i,
-.tour-dates-item__address>u {
+.tour-dates-item__address>u,
+.premios-item__address>i,
+.premios-item__address>u {
   font-style: normal;
   position: relative
 }
 
 @supports (font-variation-settings:"wdth"1) {
   .tour-dates-item__address>i,
-  .tour-dates-item__address>u {
+  .tour-dates-item__address>u,
+  .premios-item__address>i,
+  .premios-item__address>u {
     font-family: Gilroy Regular, sans-serif;
     font-weight: 400;
     font-variation-settings: "wdth" 400, "wght" 400
   }
   @media (min-width:1080px) {
     .tour-dates-item__address>i,
-    .tour-dates-item__address>u {
+    .tour-dates-item__address>u,
+    .premios-item__address>i,
+    .premios-item__address>u {
       font-variation-settings: "wdth" calc(400*var(--scrollOffset, 1)), "wght" 400
     }
   }
 }
 
-.tour-dates-item__address>u {
+.tour-dates-item__address>u,
+.premios-item__address>u {
   text-decoration: none;
   font-style: normal
 }
 
 @supports (-webkit-text-stroke:1px) {
-  .tour-dates-item__address>u {
+  .tour-dates-item__address>u,
+  .premios-item__address>u  {
     -webkit-text-stroke: 1px #000;
     paint-order: stroke fill;
     color: transparent
@@ -4886,7 +4924,8 @@ textarea:focus {
 }
 
 @media (min-width:320px) {
-  .tour-dates-item__address {
+  .tour-dates-item__address,
+  .premios-item__address {
     font-size: 28px;
     font-size: calc(2.10526vw - -21.26316px);
     font-size: calc(var(--font-size-multiplier)*0.02105*100vw - -21.26316px);
@@ -4895,14 +4934,16 @@ textarea:focus {
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item__address {
+  .tour-dates-item__address,
+  .premios-item__address {
     font-size: 44px;
     font-size: calc(var(--font-size-multiplier)*44px)
   }
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__address {
+  .tour-dates-item--default .tour-dates-item__address,
+  .premios-item--default .premios-item__address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4916,31 +4957,36 @@ textarea:focus {
     margin-bottom: .45454545em;
     font-weight: 600;
   }
-  .tour-dates-item--default .tour-dates-item__address>span {
+  .tour-dates-item--default .tour-dates-item__address>span,
+  .premios-item--default .premios-item__address>span {
     display: block;
     width: 100%;
     min-height: 2em;
   }
-  .tour-dates-item--small .tour-dates-item__address {
+  .tour-dates-item--small .tour-dates-item__address,
+  .premios-item--small .premios-item__address {
     font-size: 22px;
     font-weight: 600
   }
 }
 
 @media (min-width:1080px) and (max-height:699px) {
-  .tour-dates-item--default .tour-dates-item__address {
+  .tour-dates-item--default .tour-dates-item__address,
+  .premios-item--default .premios-item__address {
     font-size: 34px
   }
 }
 
 @media (min-width:1080px) and (min-height:700px) {
-  .tour-dates-item--default .tour-dates-item__address {
+  .tour-dates-item--default .tour-dates-item__address,
+  .premios-item--default .premios-item__address  {
     min-height: 1.5em;
     margin-top: -0.75em
   }
 }
 
-.tour-dates-item__venue {
+.tour-dates-item__venue,
+.premios-item__venue {
   font-size: 14px;
   font-weight: 400;
   text-transform: none;
@@ -4950,7 +4996,8 @@ textarea:focus {
 }
 
 @media (min-width:320px) {
-  .tour-dates-item__venue {
+  .tour-dates-item__venue,
+  .premios-item__venue {
     font-size: 14px;
     font-size: calc(.26316vw - -11.15789px);
     font-size: calc(var(--font-size-multiplier)*0.00263*100vw - -11.15789px)
@@ -4958,26 +5005,29 @@ textarea:focus {
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item__venue {
+  .tour-dates-item__venue,
+  .premios-item__venue {
     font-size: 14px;
     font-size: calc(var(--font-size-multiplier)*16px);
     /* height: 2.5em */
   }
 }
 
-.tour-dates-item__button {
+.tour-dates-item__button,
+.premios-item__button {
   white-space: nowrap
 }
 
 @media (max-width:1079px) {
-  .tour-dates-item__button {
+  .tour-dates-item__button,
+  .premios-item__button {
     padding-left: 15px;
     font-size: 11px
   }
 }
 
 @media (max-width:1079px) {
-  .tour-dates-item__date {
+  .tour-dates-item__date,{
     font-size: 12px;
     -webkit-box-flex: 0;
     -ms-flex: none;
@@ -4991,10 +5041,26 @@ textarea:focus {
     line-height: 1.1;
     letter-spacing: .1em
   }
+
+  .premios-item__date {
+    font-size: 12px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 80%;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: .1em
+  }
 }
 
 @media (max-width:1079px) and (min-width:320px) {
-  .tour-dates-item__date {
+  .tour-dates-item__date,
+  .premios-item__date {
     font-size: 12px;
     font-size: calc(.26316vw - -11.15789px);
     font-size: calc(var(--font-size-multiplier)*0.00263*100vw - -11.15789px)
@@ -5002,7 +5068,8 @@ textarea:focus {
 }
 
 @media (max-width:1079px) and (min-width:1080px) {
-  .tour-dates-item__date {
+  .tour-dates-item__date,
+  .premios-item__date {
     font-size: 14px;
     font-size: calc(var(--font-size-multiplier)*14px);
     width: 100%
@@ -5010,7 +5077,8 @@ textarea:focus {
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__date {
+  .tour-dates-item--default .tour-dates-item__date,
+  .premios-item--default .premios-item__date {
     font-size: 12px;
     -webkit-box-flex: 0;
     -ms-flex: none;
@@ -5027,7 +5095,8 @@ textarea:focus {
 }
 
 @media (min-width:1080px) and (min-width:320px) {
-  .tour-dates-item--default .tour-dates-item__date {
+  .tour-dates-item--default .tour-dates-item__date,
+  .premios-item--default .premios-item__date {
     font-size: 12px;
     font-size: calc(.26316vw - -11.15789px);
     font-size: calc(var(--font-size-multiplier)*0.00263*100vw - -11.15789px)
@@ -5035,22 +5104,31 @@ textarea:focus {
 }
 
 @media (min-width:1080px) and (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__date {
+  .tour-dates-item--default .tour-dates-item__date,{
     font-size: 14px;
     font-size: calc(var(--font-size-multiplier)*14px);
     width: 100%
   }
+
+  .premios-item--default .premios-item__date {
+    font-size: 14px;
+    font-size: calc(var(--font-size-multiplier)*14px);
+    width: 80%
+  }
+
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--small .tour-dates-item__date {
+  .tour-dates-item--small .tour-dates-item__date,
+  .premios-item--small .premios-item__date {
     width: 140px;
     line-height: 1.2
   }
 }
 
 @media (max-width:1079px) {
-  .tour-dates-item__day {
+  .tour-dates-item__day,
+  .premios-item__day {
     font-size: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5063,7 +5141,8 @@ textarea:focus {
     letter-spacing: 0
   }
   @supports (font-variation-settings:"wdth"1) {
-    .tour-dates-item__day>span:first-letter {
+    .tour-dates-item__day>span:first-letter,
+    .premios-item__day>span:first-letter {
       font-family: Gilroy Regular, sans-serif;
       font-variation-settings: "wdth" 400
     }
@@ -5071,7 +5150,8 @@ textarea:focus {
 }
 
 @media (max-width:1079px) and (min-width:320px) {
-  .tour-dates-item__day {
+  .tour-dates-item__day,
+  .premios-item__day {
     font-size: 24px;
     font-size: calc(1.57895vw - -18.94737px);
     font-size: calc(var(--font-size-multiplier)*0.01579*100vw - -18.94737px)
@@ -5079,14 +5159,16 @@ textarea:focus {
 }
 
 @media (max-width:1079px) and (min-width:1080px) {
-  .tour-dates-item__day {
+  .tour-dates-item__day,
+  .premios-item__day {
     font-size: 36px;
     font-size: calc(var(--font-size-multiplier)*36px)
   }
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__day {
+  .tour-dates-item--default .tour-dates-item__day,
+  .premios-item--default .premios-item__day {
     font-size: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5099,7 +5181,8 @@ textarea:focus {
     letter-spacing: 0
   }
   @supports (font-variation-settings:"wdth"1) {
-    .tour-dates-item--default .tour-dates-item__day>span:first-letter {
+    .tour-dates-item--default .tour-dates-item__day>span:first-letter,
+    .premios-item--default .premios-item__day>span:first-letter {
       font-family: Gilroy Regular, sans-serif;
       font-variation-settings: "wdth" 400
     }
@@ -5107,7 +5190,8 @@ textarea:focus {
 }
 
 @media (min-width:1080px) and (min-width:320px) {
-  .tour-dates-item--default .tour-dates-item__day {
+  .tour-dates-item--default .tour-dates-item__day,
+  .premios-item--default .premios-item__day {
     font-size: 24px;
     font-size: calc(1.57895vw - -18.94737px);
     font-size: calc(var(--font-size-multiplier)*0.01579*100vw - -18.94737px)
@@ -5115,14 +5199,16 @@ textarea:focus {
 }
 
 @media (min-width:1080px) and (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__day {
+  .tour-dates-item--default .tour-dates-item__day,
+  .premios-item--default .premios-item__day {
     font-size: 36px;
     font-size: calc(var(--font-size-multiplier)*36px)
   }
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--small .tour-dates-item__day {
+  .tour-dates-item--small .tour-dates-item__day,
+  .premios-item--small .premios-item__day {
     display: block;
     margin-bottom: 10px;
     font-size: 22px;
@@ -5131,12 +5217,14 @@ textarea:focus {
   }
 }
 
-.tour-dates-item__month-short {
+.tour-dates-item__month-short,
+.premios-item__month-short {
   display: none
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--small .tour-dates-item__month-short {
+  .tour-dates-item--small .tour-dates-item__month-short,
+  .premios-item--small .premios-item__month-short {
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
@@ -5147,7 +5235,8 @@ textarea:focus {
 }
 
 @media (min-width:1080px) and (min-width:320px) {
-  .tour-dates-item--small .tour-dates-item__month-short {
+  .tour-dates-item--small .tour-dates-item__month-short,
+  .premios-item--small .premios-item__month-short {
     font-size: 12px;
     font-size: calc(.26316vw - -11.15789px);
     font-size: calc(var(--font-size-multiplier)*0.00263*100vw - -11.15789px)
@@ -5155,19 +5244,22 @@ textarea:focus {
 }
 
 @media (min-width:1080px) and (min-width:1080px) {
-  .tour-dates-item--small .tour-dates-item__month-short {
+  .tour-dates-item--small .tour-dates-item__month-short,
+  .premios-item--small .premios-item__month-short {
     font-size: 14px;
     font-size: calc(var(--font-size-multiplier)*14px)
   }
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--small .tour-dates-item__month-long {
+  .tour-dates-item--small .tour-dates-item__month-long,
+  .premios-item--small .premios-item__month-long {
     display: none
   }
 }
 
-.tour-dates-archive-link {
+.tour-dates-archive-link,
+.premios-archive-link {
   position: relative;
   display: block;
   padding: 40px 0;
