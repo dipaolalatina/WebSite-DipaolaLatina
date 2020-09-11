@@ -4707,7 +4707,7 @@ textarea:focus {
 }
 
 @media (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__container, {
+  .tour-dates-item--default .tour-dates-item__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -5027,7 +5027,7 @@ textarea:focus {
 }
 
 @media (max-width:1079px) {
-  .tour-dates-item__date,{
+  .tour-dates-item__date {
     font-size: 12px;
     -webkit-box-flex: 0;
     -ms-flex: none;
@@ -5104,7 +5104,7 @@ textarea:focus {
 }
 
 @media (min-width:1080px) and (min-width:1080px) {
-  .tour-dates-item--default .tour-dates-item__date,{
+  .tour-dates-item--default .tour-dates-item__date {
     font-size: 14px;
     font-size: calc(var(--font-size-multiplier)*14px);
     width: 100%
@@ -5178,7 +5178,7 @@ textarea:focus {
     font-weight: 400;
     text-transform: none;
     line-height: 1;
-    letter-spacing: 0
+    letter-spacing: 0;
   }
   @supports (font-variation-settings:"wdth"1) {
     .tour-dates-item--default .tour-dates-item__day>span:first-letter,
