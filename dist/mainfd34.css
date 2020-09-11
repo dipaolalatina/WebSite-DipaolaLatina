@@ -5180,6 +5180,7 @@ textarea:focus {
     line-height: 1;
     letter-spacing: 0;
   }
+  
   @supports (font-variation-settings:"wdth"1) {
     .tour-dates-item--default .tour-dates-item__day>span:first-letter,
     .premios-item--default .premios-item__day>span:first-letter {
