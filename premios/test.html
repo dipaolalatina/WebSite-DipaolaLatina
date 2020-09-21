@@ -10251,82 +10251,9 @@
 <main class="scroll-wrap">
 	<div class="scroll-wrap__inner">
 		<div class="scroll-wrap__item">
-			<div class="media-group media-group--active media-group--tour-dates" id="current">
+			<div class="media-group media-group--active media-group--tour-dates" id="target">
 				
-				<div class="premios-item  premios-item--default">
-					<div class="premios-item__container">
-						
-						<div class="premios-item__date">
-							<img src="../assets/images/premios/premio-ej.jpg" alt="" >
-						</div>
-						
-						<div class="premios-item__details">
-							<address class="premios-item__address">
-								<span>Premio 1</span>
-							</address>
-							<span class="premios-item__venue">Ideas que conecten y generen resultados, buscando la mejor manera de impactar con nuestras audiencias y cumplir con 
-								los objetivos de nuestros clientes.
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="premios-item  premios-item--default">
-					<div class="premios-item__container">
-						
-						<div class="premios-item__date">
-							<img src="../assets/images/premios/premio-ej.jpg" alt="" >
-						</div>
-						
-						<div class="premios-item__details">
-							<address class="premios-item__address">
-								<span>Premio 2</span>
-							</address>
-							<span class="premios-item__venue">Ideas que conecten y generen resultados, buscando la mejor manera de impactar con nuestras audiencias y cumplir con 
-								los objetivos de nuestros clientes.
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="premios-item  premios-item--default">
-					<div class="premios-item__container">
-						
-						<div class="premios-item__date">
-							<img src="../assets/images/premios/premio-ej.jpg" alt="" >
-						</div>
-						
-						<div class="premios-item__details">
-							<address class="premios-item__address">
-								<span>Premio 3</span>
-							</address>
-							<span class="premios-item__venue">Ideas que conecten y generen resultados, buscando la mejor manera de impactar con nuestras audiencias y cumplir con 
-								los objetivos de nuestros clientes.
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="premios-item  premios-item--default">
-					<div class="premios-item__container">
-						
-						<div class="premios-item__date">
-							<img src="../assets/images/premios/premio-ej.jpg" alt="" >
-						</div>
-						
-						<div class="premios-item__details">
-							<address class="premios-item__address">
-								<span>Premio 4</span>
-							</address>
-							<span class="premios-item__venue">Ideas que conecten y generen resultados, buscando la mejor manera de impactar con nuestras audiencias y cumplir con 
-								los objetivos de nuestros clientes.
-							</span>
-						</div>
-					</div>
-				</div>
-
 			</div>
-
 			<div class="media-group media-group--tour-dates" id="media-group-archive"></div>
 		</div>
 	</div>
@@ -10352,4 +10279,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js"></script>
 <script src="../dist/js/main.js"></script>
+<script type="module" src="../dist/js/awards.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js" integrity="sha256-MPgtcamIpCPKRRm1ppJHkvtNBAuE71xcOM+MmQytXi8=" crossorigin="anonymous"></script>
+<script id="template" type="x-tmpl-mustache">
+    <div class="premios-item  premios-item--default">
+        <div class="premios-item__container">
+            <div class="premios-item__date">
+                <img src="{{image}}" alt="" >
+            </div>           
+            <div class="premios-item__details">
+                <address class="premios-item__address">
+                    <span>{{name}}</span>
+                </address>
+                <span class="premios-item__venue">{{description}}
+                </span>
+            </div>
+        </div>
+    </div>
+</script>
 </html>

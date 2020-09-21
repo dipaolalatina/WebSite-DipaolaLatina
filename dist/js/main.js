@@ -183,5 +183,4 @@ function gdprAlert() {
 }
 
 prepareScroll();
-loadPage();
 gdprAlert();
