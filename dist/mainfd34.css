@@ -7871,7 +7871,6 @@ textarea:focus {
 .mailing-list__label {
   font-size: 12px;
   font-weight: 500;
-  /*text-transform: uppercase;*/
   line-height: 1.1;
   letter-spacing: .1em;
   margin-bottom: 1.25em;
@@ -7906,7 +7905,6 @@ textarea:focus {
 }
 
 .mailing-list__privacy {
-  /*text-transform: uppercase;*/
   font-weight: 500;
   font-size: 13px;
   letter-spacing: .1em;
@@ -7948,6 +7946,96 @@ textarea:focus {
   width: 100%;
   height: 2em;
   border-bottom: 1px solid var(--color-border)
+}
+
+.mailing-list__textarea{
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 4em;
+  border-bottom: 1px solid var(--color-border)
+}
+
+.mailing-list__select{
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 4em;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: .1em;
+  margin-bottom: 2em;
+  font-weight: 600;
+  letter-spacing: .2em;
+}
+
+@media (min-width: 320px){
+  .mailing-list__select {
+    font-size: 12px;
+    font-size: calc(.26316vw - -11.15789px);
+    font-size: calc(var(--font-size-multiplier)*0.00263*100vw - -11.15789px);
+  }
+}
+
+@media (min-width: 1080px){
+  .mailing-list__select  {
+    font-size: 14px;
+    font-size: calc(var(--font-size-multiplier)*14px);
+  }
+}
+
+.mailing-list__select-wrap:after,
+.mailing-list__select-wrap:before {
+  content: "";
+  position: absolute;
+  pointer-events: none
+}
+
+@media (min-width:1080px) {
+  .mailing-list__select-wrap {
+    max-width: none
+  }
+  .mailing-list__select-wrap:before {
+    bottom: 0;
+    left: calc(1em + 20px);
+    right: calc(1em + 25px);
+    height: 2px;
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    background: currentColor;
+    -webkit-transition: opacity .15s ease, -webkit-transform .25s ease-in-out;
+    transition: opacity .15s ease, -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, opacity .15s ease;
+    transition: transform .25s ease-in-out, opacity .15s ease, -webkit-transform .25s ease-in-out
+  }
+  .mailing-list__select-wrap--active:before {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+  }
+}
+
+.mailing-list__select-wrap:after {
+  top: 8em;
+  bottom: 5px;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-color: currentcolor hsla(0,0%,100%,0) hsla(0,0%,100%,0);
+  border-style: solid;
+  border-width: 6px 6px 0;
+}
+
+@media (min-width: 1080px){
+    .mailing-list__select-wrap:after {
+      right: 5em;
+  }
 }
 
 .mailing-list__button {
@@ -8092,7 +8180,7 @@ textarea:focus {
 }
 
 .privacy__content ol {
-  list-style-type: decimal
+  list-style-type: lower-alpha;
 }
 
 .privacy__content h2,

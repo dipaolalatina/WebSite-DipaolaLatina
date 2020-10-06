@@ -2,24 +2,24 @@
 <html lang="es">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-<meta property="og:site_name" content="di Paola Latina">
-<meta property="og:title" content="di Paola Latina // Contacto">
-<meta property="og:url" content="https://dipaolalatina.com/">
-<meta property="og:type" content="website">
-<meta property="og:image" content="../assets/images/og-image.jpg">
-<title>di Paola Latina // Contact</title>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="di Paola Latina">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-<!--<link rel="manifest" href="https://dipaolalatina.com/site.webmanifest">-->
-<link rel="mask-icon" href="https://dipaolalatina.com/safari-pinned-tab.svg" color="#444444">
-<meta name="msapplication-TileColor" content="#444">
-<meta name="theme-color" content="#fff">
-<link rel="stylesheet" href="../dist/mainfd34.css?v=707966">
+	<meta property="og:site_name" content="di Paola Latina">
+	<meta property="og:title" content="di Paola Latina // Contacto">
+	<meta property="og:url" content="https://dipaolalatina.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="../assets/images/og-image.jpg">
+	<title>di Paola Latina // Contacto</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="di Paola Latina">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+	<link rel="mask-icon" href="https://dipaolalatina.com/safari-pinned-tab.svg" color="#444444">
+	<meta name="msapplication-TileColor" content="#444">
+	<meta name="theme-color" content="#fff">
+	<link rel="stylesheet" href="../dist/mainfd34.css?v=707966">
+</head>
 
 <body class=contact style="opacity: 0;">
 <div class="main-app">
@@ -10253,17 +10253,30 @@
 				</p>
 
 				<form class="mailing-list__form" action="#" method="post">
-					<label class="mailing-list__label" for="nombre">Tu Nombre</label>
+					<label class="mailing-list__label" for="nombre">Nombre</label>
 					<input class="mailing-list__input" type="text" name="nombre" id="nombre" required></input>
 					<label class="mailing-list__label" for="email">Email</label>
 					<input class="mailing-list__input" type="email" name="email" id="email" required></input>
+					<div class="mailing-list__select-wrap">
+						<select class="mailing-list__select" id="country">
+							<option disabled="" selected="" value="">País</option>
+							<option value="Argentina">Argentina</option>
+							<option value="Chile">Chile</option>
+							<option value="Colombia">Colombia</option>
+						</select>
+					</div>					
+					<label class="mailing-list__label" for="message">Mensaje</label>
+					<textarea class="mailing-list__textarea" type="text" name="message" id="message" rows="3"></textarea>
       				<button  class="button button--medium mailing-list__button">
   						<span class="button__text">Enviar</span>
-
-
 					    <div class="button__border"></div>
-					  
 					</button>
+					<div class="alert alert-active alert-success">
+						Su mensaje se ha enviado con éxito
+					</div>
+					<div class="alert alert-active alert-danger">
+						Su mensaje se ha podido enviar. Intente nuevamente.
+					</div>
 					<p class="mailing-list__privacy"><a target="_blank" href="../privacy/index.html">Política de Privacidad</a></p>
 				</form>				
 
