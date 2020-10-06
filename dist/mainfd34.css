@@ -1345,8 +1345,7 @@ textarea:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 1px solid #000;
-    border-radius: 25px
+    border-bottom: 1px solid #000;
   }
 }
 
@@ -1453,7 +1452,6 @@ textarea:focus {
 .gdpr-alert--active {
   font-size: 12px;
   font-weight: 500;
-  /*text-transform: uppercase;*/
   line-height: 1.1;
   letter-spacing: .1em;
   display: block;
@@ -1468,7 +1466,6 @@ textarea:focus {
   max-width: 100%;
   pointer-events: auto;
   background: #fff;
-  /*background: var(--color-background);*/
   -webkit-transition: none;
   transition: none;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .05);
@@ -7860,8 +7857,8 @@ textarea:focus {
     flex-direction: column;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding-bottom: 130px;
+    justify-content: flex-start;
+    padding-bottom: 70px;
     height: 100%;
     border-top: 0
   }
@@ -7871,7 +7868,6 @@ textarea:focus {
 .mailing-list__label {
   font-size: 12px;
   font-weight: 500;
-  /*text-transform: uppercase;*/
   line-height: 1.1;
   letter-spacing: .1em;
   margin-bottom: 1.25em;
@@ -7897,7 +7893,7 @@ textarea:focus {
 }
 
 .mailing-list__heading {
-  margin-bottom: 1.25em;
+  margin-bottom: 5.25em;
   font-weight: 700
 }
 
@@ -7906,7 +7902,6 @@ textarea:focus {
 }
 
 .mailing-list__privacy {
-  /*text-transform: uppercase;*/
   font-weight: 500;
   font-size: 13px;
   letter-spacing: .1em;
@@ -7948,6 +7943,103 @@ textarea:focus {
   width: 100%;
   height: 2em;
   border-bottom: 1px solid var(--color-border)
+}
+
+.mailing-list__textarea{
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 4em;
+  border-bottom: 1px solid var(--color-border)
+}
+
+.mailing-list__select{
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 4em;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: .1em;
+  margin-bottom: 2em;
+  font-weight: 600;
+  letter-spacing: .2em;
+}
+
+@media (min-width: 320px){
+  .mailing-list__select {
+    font-size: 12px;
+    font-size: calc(.26316vw - -11.15789px);
+    font-size: calc(var(--font-size-multiplier)*0.00263*100vw - -11.15789px);
+  }
+}
+
+@media (min-width: 1080px){
+  .mailing-list__select  {
+    font-size: 14px;
+    font-size: calc(var(--font-size-multiplier)*14px);
+  }
+}
+
+.mailing-list__select-wrap:after,
+.mailing-list__select-wrap:before {
+  content: "";
+  position: absolute;
+  pointer-events: none
+}
+
+@media (min-width:1080px) {
+  .mailing-list__select-wrap {
+    max-width: none
+  }
+  .mailing-list__select-wrap:before {
+    bottom: 0;
+    left: calc(1em + 20px);
+    right: calc(1em + 25px);
+    height: 2px;
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    background: currentColor;
+    -webkit-transition: opacity .15s ease, -webkit-transform .25s ease-in-out;
+    transition: opacity .15s ease, -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, opacity .15s ease;
+    transition: transform .25s ease-in-out, opacity .15s ease, -webkit-transform .25s ease-in-out
+  }
+  .mailing-list__select-wrap--active:before {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+  }
+}
+
+@media (min-width: 320px){
+  .mailing-list__select-wrap:after {
+    top: 0;
+    bottom: 30em;
+    right: 3em;
+  }
+}
+
+.mailing-list__select-wrap:after {
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-color: currentcolor hsla(0,0%,100%,0) hsla(0,0%,100%,0);
+  border-style: solid;
+  border-width: 6px 6px 0;
+}
+
+@media (min-width: 1080px){
+    .mailing-list__select-wrap:after {
+      right: 5em;
+      top: 0;
+      bottom: 4em;
+  }
 }
 
 .mailing-list__button {
@@ -8092,7 +8184,7 @@ textarea:focus {
 }
 
 .privacy__content ol {
-  list-style-type: decimal
+  list-style-type: lower-alpha;
 }
 
 .privacy__content h2,
@@ -8229,7 +8321,8 @@ body.admin {
   visibility: visible;
   opacity: 1;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
   padding: 5px 15px;
   -webkit-transition: opacity .3s;
   transition: opacity .3s
