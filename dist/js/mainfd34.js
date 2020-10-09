@@ -132,7 +132,7 @@
 				timeout: 1e4,
 				cache: !0
 			}).then((function (l) {
-				var s = $(l).filter("#tour-dates-history").children(".tour-dates-item"),
+				var s = $(l).filter("#servicios-history").children(".servicios-item"),
 					i = !1;
 				o.removeClass(m), s.length ? (o.removeClass("media-group--active"), a.html(s), a.addClass("media-group--active"), n() && r.scrollLeft(window.innerWidth)) : i || (e(t - 1), $(".tabs__select").val(t - 1), i = !0)
 			})).catch((function (e) {
@@ -298,20 +298,20 @@
 						$(".tabs__item").removeClass("tabs__item--active"), $(this).addClass("tabs__item--active"), r.removeClass("media-group--active"), $(t).addClass("media-group--active"), n() && a.scrollLeft(window.innerWidth), o(), e.preventDefault()
 					})), $(".tabs__select").on("change", (function () {
 						$(this).parent().addClass("tabs__select-wrap--active"), v(this.value)
-					})), $(".tour-dates-archive-link").on("click", (function (e) {
-						t.val("2019").trigger("change"), n() || document.getElementById("tour-dates-anchor").scrollIntoView({
+					})), $(".servicios-archive-link").on("click", (function (e) {
+						t.val("2019").trigger("change"), n() || document.getElementById("servicios-anchor").scrollIntoView({
 							behavior: "smooth"
 						}), e.preventDefault()
 					}))
 				}
 			}(), function () {
-				var e = document.querySelector(".tour-dates-group");
+				var e = document.querySelector(".servicios-group");
 				if (e) {
-					var t = e.querySelector(".tour-dates-group__inner"),
-						o = document.getElementById("tour-dates-scroll-up"),
-						n = document.getElementById("tour-dates-scroll-down"),
+					var t = e.querySelector(".servicios-group__inner"),
+						o = document.getElementById("servicios-scroll-up"),
+						n = document.getElementById("servicios-scroll-down"),
 						a = function () {
-							u(t) ? e.classList.add("tour-dates-group--has-overflow") : e.classList.remove("tour-dates-group--has-overflow")
+							u(t) ? e.classList.add("servicios-group--has-overflow") : e.classList.remove("servicios-group--has-overflow")
 						},
 						r = function () {
 							f(o, n, t)
@@ -325,7 +325,7 @@
 					}))
 				}
 			}(), function () {
-				if (document.body.classList.contains("tour-dates") && window.location.hash) {
+				if (document.body.classList.contains("servicios") && window.location.hash) {
 					var e = document.querySelector(".tabs__select"),
 						t = e.parentElement,
 						o = window.location.hash.replace("#", "");
