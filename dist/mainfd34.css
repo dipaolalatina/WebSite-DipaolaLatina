@@ -6621,7 +6621,9 @@ textarea:focus {
   }
 }
 
-
+.contact__dl dt b {
+  font-weight: 700;
+}
 
 .contact__dl dd {
   margin-bottom: 30px
