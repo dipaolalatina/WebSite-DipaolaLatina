@@ -9613,3 +9613,64 @@ body.admin {
     width: 600px
   }
 }
+
+/* Boton Back Home */
+
+.button__back-home {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: .1em;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 103;
+  padding: 30px;
+  margin: 0 auto;
+  width: 160px;
+  max-width: 100%;
+  pointer-events: auto;
+  /* -webkit-transition: none;
+  transition: none; */
+}
+
+@media (min-width:320px) {
+  .button__back-home{
+    font-size: 12px;
+    font-size: calc(.26316vw - -11.15789px);
+    font-size: calc(var(--font-size-multiplier)*0.00263*100vw - -11.15789px)
+  }
+}
+
+@media (min-width:1080px) {
+  .button__back-home {
+    font-size: 14px;
+    font-size: calc(var(--font-size-multiplier)*14px);
+    display: block;
+  }
+}
+
+@media (min-width:480px) {
+  .button__back-home {
+    bottom: 28%;
+    left: 60px;
+    right: 30px
+  }
+}
+
+@media (min-width:720px) {
+  .button__back-home {
+    right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:1400px) {
+  .button__back-home {
+    bottom: 32%;
+    left: 60px;
+    right: 30px
+  }
+}
